@@ -1,16 +1,9 @@
-from cmath import sqrt
-import dbm
 import math
+import os
+
 import numpy as np
 import pandas as pd
-import os
-import torch
-import matplotlib.pyplot as plt
-import matplotlib.ticker
-from mpl_toolkits.mplot3d import Axes3D
-from fluidfoam import readscalar, readvector, readsymmtensor, readtensor, readfield
-from Data_extraction import Data_processer
-import statistics
+from fluidfoam import readscalar, readsymmtensor, readtensor, readvector
 
 
 def orderofMag(number):
@@ -47,12 +40,11 @@ def variable_size(type):
 def main(
     root_path="./Data",
     source_dir="Heat Exchanger 1",
-    type="DNS",
-    reynolds_number="1750",
+    type="LES",
+    reynolds_number="2243",
     high_fidelity="High_Fedility",
     frozen="Frozen_K_Omega",
 ):
-
     variable_names = {
         "k": {"type": "scalar", "folder": frozen},
         "omega": {"type": "scalar", "folder": frozen},
