@@ -1,20 +1,6 @@
-from cmath import sqrt
-import time
-import dbm
-import math
-import numpy as np
 import pandas as pd
 import os
-import torch
-import inspect
 import json
-import matplotlib.pyplot as plt
-import matplotlib.ticker
-from mpl_toolkits.mplot3d import Axes3D
-from torchvision import transforms
-from fluidfoam import readscalar, readvector, readsymmtensor, readtensor
-from tqdm import tqdm
-from scipy.stats import norm
 
 
 def plot_histograms(data_set, postfix, source_path):

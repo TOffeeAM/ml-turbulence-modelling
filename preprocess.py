@@ -1,16 +1,9 @@
-from cmath import sqrt
-import dbm
 import math
 import numpy as np
 import pandas as pd
 import os
-import torch
 import matplotlib.pyplot as plt
-import matplotlib.ticker
-from mpl_toolkits.mplot3d import Axes3D
-from fluidfoam import readscalar, readvector, readsymmtensor, readtensor, readfield
-from Data_extraction import Data_processer
-import statistics
+from fluidfoam import readscalar, readvector, readsymmtensor, readtensor
 
 
 def orderofMag(number):
