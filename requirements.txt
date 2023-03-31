@@ -1,0 +1,5 @@
+scipy == 1.10.1
+matplotlib == 3.7.1
+pandas == 1.5.3
+torch == 2.0.0
+fluidfoam == 0.2.4

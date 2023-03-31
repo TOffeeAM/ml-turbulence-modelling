@@ -2,7 +2,6 @@ import json
 import os
 import time
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
@@ -10,8 +9,8 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 
-from FNN import FNN
-from plot_graphs import plot_graphs
+from .FNN import FNN
+from .plot_graphs import plot_graphs
 
 
 def normalized_loss(predicted, real):
@@ -291,7 +290,7 @@ def load_data(
     data_set_size = data_set.shape[0]
 
     # Extract if needed I_1,I_2,V_R,R_T,T_I
-    input_feature_names = ["I_1", "I_2", "V_R", "R_T", "T_I"]
+    input_feature_names = ["I_1", "I_2", "V_R", "R_T", "T_I"]   # noqa: F841
     input_features = data_set[input_feature_list]
     labels = data_set[output_feature_list]
 
