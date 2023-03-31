@@ -26,8 +26,8 @@ def plot_histograms(data_set, postfix, source_path):
 def main(
     type="LES",
     Heat_Exchanger_type="Heat Exchanger 1",
-    High_Fedility_type="DNS",
-    Reynolds_Number="1000",
+    High_Fedility_type="LES",
+    Reynolds_Number="2243",
     cutoffs={"I_1": 0.95, "I_2": 0.95},
     input_feature_list=["V_R", "R_T"],
     k_threshold=0.1,

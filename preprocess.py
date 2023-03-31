@@ -47,8 +47,8 @@ def variable_size(type):
 def main(
     root_path="./Data",
     source_dir="Heat Exchanger 1",
-    type="DNS",
-    reynolds_number="1750",
+    type="LES",
+    reynolds_number="2243",
     high_fidelity="High_Fedility",
     frozen="Frozen_K_Omega",
 ):
