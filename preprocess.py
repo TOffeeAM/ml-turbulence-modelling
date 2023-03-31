@@ -1,9 +1,10 @@
 import math
+import os
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import os
-import matplotlib.pyplot as plt
-from fluidfoam import readscalar, readvector, readsymmtensor, readtensor
+from fluidfoam import readscalar, readsymmtensor, readtensor, readvector
 
 
 def orderofMag(number):
@@ -45,7 +46,6 @@ def main(
     high_fidelity="High_Fedility",
     frozen="Frozen_K_Omega",
 ):
-
     variable_names = {
         "k": {"type": "scalar", "folder": frozen},
         "omega": {"type": "scalar", "folder": frozen},

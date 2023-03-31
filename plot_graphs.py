@@ -1,17 +1,19 @@
-import torch
-import torch.optim as optim
-import math
 import cmath
-import pandas as pd
-import numpy as np
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
-import matplotlib.pyplot as plt
-import time
-from FNN import FNN
-import os
-from scipy.interpolate import griddata
 import json
+import math
+import os
+import time
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from scipy.interpolate import griddata
+from torch.utils.data import DataLoader, Dataset
+
+from FNN import FNN
 
 
 def plot_graphs(

@@ -1,6 +1,7 @@
-import pandas as pd
-import os
 import json
+import os
+
+import pandas as pd
 
 
 def plot_histograms(data_set, postfix, source_path):

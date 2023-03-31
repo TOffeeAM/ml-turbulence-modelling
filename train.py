@@ -1,14 +1,16 @@
-import torch
-import torch.optim as optim
-import pandas as pd
-import numpy as np
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
-import matplotlib.pyplot as plt
-import time
-from FNN import FNN
-import os
 import json
+import os
+import time
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset
+
+from FNN import FNN
 from plot_graphs import plot_graphs
 
 
